@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(15 23 42 / var(--tw-bg-opacity)) rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(30 41 59 / var(--tw-bg-opacity));
+    border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity)) ;
+    border-radius: 14px;
+    border: 3px solid rgb(30 41 59 / var(--tw-bg-opacity));
+}
